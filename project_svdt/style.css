@@ -1,0 +1,38 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=PT+Serif&family=Rubik&display=swap');
+body{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* backgrond */
+body{
+  background-color: #EEE5D2;
+}
+
+/* navbar */
+/* .navbar{
+    background-color: #ca9961;
+} */
+#content{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+}
+
+#beer{
+  padding-top:20%;
+}
+#content_liquor{
+  padding-left: 8%;
+}
+#content_beer{
+  padding-left: 8%;
+}
+#content_wine{
+  padding-left: 8%;
+}
+#content_result{
+  background-color: grey;
+}

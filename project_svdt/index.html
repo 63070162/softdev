@@ -1,0 +1,177 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รู้ลิมิต</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/30c46c336b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item has-text-weight-bold">
+                    CALCULATE
+                </a>
+
+                <a href="data.html" class="navbar-item has-text-weight-bold">
+                    DATA
+                </a>
+                <a href="about_us.html" class="navbar-item has-text-weight-bold">
+                    ABOUT US
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    <img src="/image/logo_รู้ลิมิต.jpg" alt="logo" class="logo" id="logo" />
+                    รู้ลิมิต
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container " id="content">
+        <div class="columns">
+            <div class="column">
+                <div class="sex" id="sex">
+                    <label class="label">SEX</label>
+                    <label class="radio">
+                        <input type="radio" name="sex" id="male">
+                        Male
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="sex" id="female">
+                        Female
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-3">
+                <div class="weight">
+                    <label class="label">WEIGHT</label>
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input id="weight" class="input" type="tel" placeholder="your weight">
+                            <span class="icon is-small is-left">
+                                <i class="fa-solid fa-weight-scale"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                KG
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container box_field">
+            <div class="box" id="from">
+                <div class="columns content_from">
+                    <div class="column is-2 pt-6">
+                        <img src="/image/alcohol.png">
+                    </div>
+                    <div class="column is-5 ml-6 mt-5" id="content_liquor">
+                        <label class="label">Liquor</label>
+                        <div class="size mt-5 ">
+                            Quantity
+                            <input id="quantity_liquor" class="ml-2 mr-2" size="4" type="text" value="1">
+                            <select id="type_liquor" class="select is-dark">
+                                <option>Flat</option>
+                                <option>Round</option>
+                            </select>
+                        </div>
+                        <div class="Amount_of_alcohol mt-4">
+                            Amount of alcohol
+                            <input id="percent_liquor" class="ml-2 mr-2" type="text" value="35" size="4">
+                            %
+                        </div>
+                    </div>
+                    <div class="column is-5 has-text-centered mt-6">
+                        <div class="is-size-4">RESULT</div>
+                        <p id="result_liquor" class="is-size-4">0</p>
+                        <div class="is-size-4">GRAM</div>
+                    </div>
+                </div>
+                <div class="columns content_from">
+                    <div class="column is-2">
+                        <img id="beer" src="/image/beer.png">
+                    </div>
+                    <div class="column is-5 ml-6 mt-5" id="content_beer">
+                        <label class="label">Beer</label>
+                        <div class="size mt-5 ">
+                            Quantity
+                            <input id="quantity_beer" class="ml-2 mr-2" type="text" value="1" size="4">
+                            <select id="type_beer" class="select is-dark" id="">
+                                <option>Can</option>
+                                <option>Bottle</option>
+                            </select>
+                        </div>
+                        <div class="Amount_of_alcohol mt-4">
+                            Amount of alcohol
+                            <input id="percent_beer" class="ml-2 mr-2" type="text" value="5" size="4">
+                            %
+                        </div>
+                    </div>
+                    <div class="column is-5 has-text-centered mt-6">
+                        <div class="is-size-4">RESULT</div>
+                        <p id="result_beer" class="is-size-4">0</p>
+                        <div class="is-size-4">GRAM</div>
+                    </div>
+                </div>
+                <div class="columns content_from">
+                    <div class="column is-2">
+                        <img src="/image/wine.png">
+                    </div>
+                    <div class="column is-5 ml-6 mt-5" id="content_wine">
+                        <label class="label">Wine</label>
+                        <div class="size mt-5 ">
+                            Quantity
+                            <input id="quantity_wine" class="ml-2 mr-2" type="text" value="1" size="4">
+                            <select id="type_wine" class="select is-dark" id="">
+                                <option>Demi</option>
+                                <option>Standard</option>
+                                <option>Magnum</option>
+                            </select>
+                        </div>
+                        <div class="Amount_of_alcohol mt-4">
+                            Amount of alcohol
+                            <input id="percent_wine" class="ml-2 mr-2" type="text" value="10" size="4">
+                            %
+                        </div>
+                    </div>
+                    <div class="column is-5 has-text-centered mt-6">
+                        <div class="is-size-4">RESULT</div>
+                        <p id="result_wine" class="is-size-4">0</p>
+                        <div class="is-size-4">GRAM</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="button is-danger is-rounded mr-3" onclick="reset_default()">Reset Default</button>
+            <button class="button is-primary is-rounded" onclick="cal()">submit</button>
+        </div>
+        <div id="content_result" class="box mt-6 has-text-centered has-text-white">
+            <div class="is-size-3">
+                <p id="ans">0</p> GRAM
+            </div>
+            <div id="description_result" class="is-size-5">ปริมาณแอลกอฮอล์อยู่ในระดับปกติ</div>
+            <div id="behavior_result" class="is-size-6">มีอาการสนุกสนาน ร่าเริงกว่าปกติ การยับยั้งชั่งใจลดลง</div>
+            <div>
+                <a href="data.html">
+                    <button class="button mt-3">SEE MORE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
