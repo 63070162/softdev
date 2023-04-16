@@ -10,11 +10,6 @@ body{
 body{
   background-color: #EEE5D2;
 }
-
-/* navbar */
-/* .navbar{
-    background-color: #ca9961;
-} */
 #content{
   padding-left: 15%;
   padding-right: 15%;
@@ -35,4 +30,11 @@ body{
 }
 #content_result{
   background-color: grey;
+}
+/* .image{
+  
+} */
+#logo_icon{
+  width: 30%;
+  
 }

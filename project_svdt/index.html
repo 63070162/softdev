@@ -30,9 +30,8 @@
                 </a>
             </div>
             <div class="navbar-end">
-                <a class="navbar-item">
-                    <img src="/image/logo_รู้ลิมิต.jpg" alt="logo" class="logo" id="logo" />
-                    รู้ลิมิต
+                <a href="index.html">
+                    <img id="logo_icon" src="/image/logo.jpg" alt="logo" class="logo is-pulled-right" id="logo" />
                 </a>
             </div>
         </div>
@@ -71,25 +70,25 @@
                 </div>
             </div>
         </div>
-        <div class="container box_field">
-            <div class="box" id="from">
+        <div class="container">
+            <div class="box">
                 <div class="columns content_from">
-                    <div class="column is-2 pt-6">
+                    <div class="column is-2 pt-6 image">
                         <img src="/image/alcohol.png">
                     </div>
                     <div class="column is-5 ml-6 mt-5" id="content_liquor">
                         <label class="label">Liquor</label>
                         <div class="size mt-5 ">
                             Quantity
-                            <input id="quantity_liquor" class="ml-2 mr-2" size="4" type="text" value="1">
-                            <select id="type_liquor" class="select is-dark">
+                            <input id="quantity_liquor" class="ml-2 mr-2 has-text-centered" size="1" type="text" value="1">
+                            <select id="type_liquor" class=" is-dark">
                                 <option>Flat</option>
                                 <option>Round</option>
                             </select>
                         </div>
                         <div class="Amount_of_alcohol mt-4">
                             Amount of alcohol
-                            <input id="percent_liquor" class="ml-2 mr-2" type="text" value="35" size="4">
+                            <input id="percent_liquor" class="ml-2 mr-2 has-text-centered" type="text" value="35" size="1">
                             %
                         </div>
                     </div>
@@ -99,23 +98,25 @@
                         <div class="is-size-4">GRAM</div>
                     </div>
                 </div>
+            </div>
+            <div class="box">
                 <div class="columns content_from">
-                    <div class="column is-2">
+                    <div class="column is-2 image">
                         <img id="beer" src="/image/beer.png">
                     </div>
                     <div class="column is-5 ml-6 mt-5" id="content_beer">
                         <label class="label">Beer</label>
                         <div class="size mt-5 ">
                             Quantity
-                            <input id="quantity_beer" class="ml-2 mr-2" type="text" value="1" size="4">
-                            <select id="type_beer" class="select is-dark" id="">
+                            <input id="quantity_beer" class="ml-2 mr-2 has-text-centered" type="text" value="1" size="1">
+                            <select id="type_beer" class=" is-dark" id="">
                                 <option>Can</option>
                                 <option>Bottle</option>
                             </select>
                         </div>
                         <div class="Amount_of_alcohol mt-4">
                             Amount of alcohol
-                            <input id="percent_beer" class="ml-2 mr-2" type="text" value="5" size="4">
+                            <input id="percent_beer" class="ml-2 mr-2 has-text-centered" type="text" value="5" size="1">
                             %
                         </div>
                     </div>
@@ -125,16 +126,18 @@
                         <div class="is-size-4">GRAM</div>
                     </div>
                 </div>
+            </div>
+            <div class="box">
                 <div class="columns content_from">
-                    <div class="column is-2">
+                    <div class="column is-2 image">
                         <img src="/image/wine.png">
                     </div>
                     <div class="column is-5 ml-6 mt-5" id="content_wine">
                         <label class="label">Wine</label>
                         <div class="size mt-5 ">
                             Quantity
-                            <input id="quantity_wine" class="ml-2 mr-2" type="text" value="1" size="4">
-                            <select id="type_wine" class="select is-dark" id="">
+                            <input id="quantity_wine" class="ml-2 mr-2 has-text-centered" type="text" value="1" size="1">
+                            <select id="type_wine" class=" is-dark" id="">
                                 <option>Demi</option>
                                 <option>Standard</option>
                                 <option>Magnum</option>
@@ -142,7 +145,7 @@
                         </div>
                         <div class="Amount_of_alcohol mt-4">
                             Amount of alcohol
-                            <input id="percent_wine" class="ml-2 mr-2" type="text" value="10" size="4">
+                            <input id="percent_wine" class="ml-2 mr-2 has-text-centered" type="text" value="10" size="1">
                             %
                         </div>
                     </div>
@@ -155,17 +158,18 @@
             </div>
 
             <button class="button is-danger is-rounded mr-3" onclick="reset_default()">Reset Default</button>
-            <button class="button is-primary is-rounded" onclick="cal()">submit</button>
+
+            <a href="#content_result"><button class="button is-primary is-rounded" onclick="cal()">submit</button></a>
         </div>
         <div id="content_result" class="box mt-6 has-text-centered has-text-white">
             <div class="is-size-3">
-                <p id="ans">0</p> GRAM
+                <p id="ans">0 GRAM</p>
             </div>
-            <div id="description_result" class="is-size-5">ปริมาณแอลกอฮอล์อยู่ในระดับปกติ</div>
-            <div id="behavior_result" class="is-size-6">มีอาการสนุกสนาน ร่าเริงกว่าปกติ การยับยั้งชั่งใจลดลง</div>
+            <div id="description_result" class="is-size-5">ไม่มีแอลกอฮอล์ในเลือด</div>
+            <div id="behavior_result" class="is-size-6">รู้สึกปกติ ไม่มีอาการเมา </div>
             <div>
                 <a href="data.html">
-                    <button class="button mt-3">SEE MORE</button>
+                    <button class="button mt-3 is-rounded">SEE MORE</button>
                 </a>
             </div>
         </div>

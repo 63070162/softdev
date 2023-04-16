@@ -100,16 +100,21 @@ function cal() {
         console.log(weight)
         alcohol = sum_alcohol / (weight * 0.68 * 10)
         let text_slice = String(alcohol).slice(0,6)
-        document.getElementById('ans').innerHTML = text_slice
+        document.getElementById('ans').innerHTML = text_slice + " GRAM"
 
         console.log(alcohol > 0.3 && alcohol <= 0.5)
-        if(alcohol <= 0.3){
+        if(alcohol == 0){
+            document.getElementById('content_result').style.backgroundColor = 'grey'
+            document.getElementById('description_result').innerHTML = 'ไม่มีแอลกอฮอล์ในเลือด'
+            document.getElementById('behavior_result').innerHTML = 'รู้สึกปกติ ไม่มีอาการเมา'
+        }
+        else if(alcohol > 0 && alcohol <= 0.3){
             document.getElementById('content_result').style.backgroundColor = 'green'
-            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับปกติ'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับน้อย'
             document.getElementById('behavior_result').innerHTML = 'มีอาการสนุกสนาน ร่าเริงกว่าปกติ การยับยั้งชั่งใจลดลง'
         }
         else if(alcohol > 0.3 && alcohol <= 0.5){
-            document.getElementById('content_result').style.backgroundColor = 'tan'
+            document.getElementById('content_result').style.backgroundColor = 'GOLD'
             document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับปานกลาง'
             document.getElementById('behavior_result').innerHTML = 'การมองเห็นลดลง ความสามารถในการควบคุมร่างกายช้าลง'
         }
@@ -118,10 +123,20 @@ function cal() {
             document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับสูง'
             document.getElementById('behavior_result').innerHTML = 'คลื่นไส้ อาเจียน เดินเซ พูดไม่รู้เรื่อง การตอบสนองและตัดสินใจช้าลง'
         }
-        else if(alcohol > 1){
+        else if(alcohol > 1 && alcohol <= 2){
+            document.getElementById('content_result').style.backgroundColor = 'DarkOrange'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับสูงมาก'
+            document.getElementById('behavior_result').innerHTML = 'สูญเสียความจำบางส่วน เศร้า อารมณ์ฉุนเฉียวง่าย'
+        }
+        else if(alcohol > 2 && alcohol <= 3){
             document.getElementById('content_result').style.backgroundColor = 'maroon'
-            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับเสี่ยง'
-            document.getElementById('behavior_result').innerHTML = 'สูญเสียความจำบางส่วน อารมณ์ฉุนเฉียวง่าย มึนงง ควบคุมสติไม่ได้'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับอันตราย'
+            document.getElementById('behavior_result').innerHTML = 'มองไม่ชัด มึนงง ควบคุมสติไม่ได้ หายใจลำบาก หัวใจเต้นผิดปกติ'
+        }
+        else if(alcohol > 3 ){
+            document.getElementById('content_result').style.backgroundColor = 'red'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับอันตรายมาก'
+            document.getElementById('behavior_result').innerHTML = 'ตาพร่ามัว ขาดสติโดยสมบูรณ์ หมดสติ อาจถึงขั้นเสียชีวิต'
         }
 
 
@@ -136,7 +151,43 @@ function cal() {
         console.log(weight)
         alcohol = sum_alcohol / (weight * 0.55 * 10)
         let text_slice = String(alcohol).slice(0,6)
-        document.getElementById('ans').innerHTML = text_slice
+        document.getElementById('ans').innerHTML = text_slice + " GRAM"
+
+        if(alcohol == 0){
+            document.getElementById('content_result').style.backgroundColor = 'grey'
+            document.getElementById('description_result').innerHTML = 'ไม่มีแอลกอฮอล์ในเลือด'
+            document.getElementById('behavior_result').innerHTML = 'รู้สึกปกติ ไม่มีอาการเมา'
+        }
+        else if(alcohol > 0 && alcohol <= 0.3){
+            document.getElementById('content_result').style.backgroundColor = 'green'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับน้อย'
+            document.getElementById('behavior_result').innerHTML = 'มีอาการสนุกสนาน ร่าเริงกว่าปกติ การยับยั้งชั่งใจลดลง'
+        }
+        else if(alcohol > 0.3 && alcohol <= 0.5){
+            document.getElementById('content_result').style.backgroundColor = 'GOLD'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับปานกลาง'
+            document.getElementById('behavior_result').innerHTML = 'การมองเห็นลดลง ความสามารถในการควบคุมร่างกายช้าลง'
+        }
+        else if(alcohol > 0.5 && alcohol <= 1){
+            document.getElementById('content_result').style.backgroundColor = 'orange'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับสูง'
+            document.getElementById('behavior_result').innerHTML = 'คลื่นไส้ อาเจียน เดินเซ พูดไม่รู้เรื่อง การตอบสนองและตัดสินใจช้าลง'
+        }
+        else if(alcohol > 1 && alcohol <= 2){
+            document.getElementById('content_result').style.backgroundColor = 'DarkOrange'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับสูงมาก'
+            document.getElementById('behavior_result').innerHTML = 'สูญเสียความจำบางส่วน เศร้า อารมณ์ฉุนเฉียวง่าย'
+        }
+        else if(alcohol > 2 && alcohol <= 3){
+            document.getElementById('content_result').style.backgroundColor = 'maroon'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับอันตราย'
+            document.getElementById('behavior_result').innerHTML = 'มองไม่ชัด มึนงง ควบคุมสติไม่ได้ หายใจลำบาก หัวใจเต้นผิดปกติ'
+        }
+        else if(alcohol > 3 ){
+            document.getElementById('content_result').style.backgroundColor = 'red'
+            document.getElementById('description_result').innerHTML = 'ปริมาณแอลกอฮอล์อยู่ในระดับอันตรายมาก'
+            document.getElementById('behavior_result').innerHTML = 'ตาพร่ามัว ขาดสติโดยสมบูรณ์ หมดสติ อาจถึงขั้นเสียชีวิต'
+        }
     }
     else {
         alert('please select your sex or fill in your weight')
